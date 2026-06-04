@@ -1,31 +1,31 @@
 @import "primeng.less";
 @white: #ffffff;
-@lightgrey: #f5f5fb;
-@lightgrey2: #d4d8df;
-@label-color: #9daab6;
-@bluegrey: #999999;
-@darkblue: #9daab6;
-@bluegrey: #9daab6;
-@body_bg: #eff3f6;
-@violet: #9daab6;
-@bluegrey: #9daab6;
-@yellow: #fcc200;
-@blue: #9daab6;
-@blue: #43c5e6;
-@green: #31394d;
-@red: #ff6a6b;
-@yellow: #ffb932;
-@lightblue: #43c5e6;
-@bluegrey2: #9daab6;
-@grey: #9b9b9b;
-@grey_snello: #31394d;
-@red_snello: #f5445f;
-@grey_snello2: #9daab6;
+@lightgrey: #ffffff;
+@lightgrey2: #ffffff;
+@label-color: #ffffff;
+@bluegrey: #000000;
+@darkblue: #ffffff;
+@bluegrey: #ffffff;
+@body_bg: #ffffff;
+@violet: #ffffff;
+@bluegrey: #ffffff;
+@yellow: #ffffff;
+@blue: #ffffff;
+@blue: #000000;
+@green: #000000;
+@red: #000000;
+@yellow: #ffffff;
+@lightblue: #000000;
+@bluegrey2: #ffffff;
+@grey: #ffffff;
+@grey_snello: #000000;
+@red_snello: #000000;
+@grey_snello2: #ffffff;
 
-@text-color: #39454e;
+@text-color: #000000;
 body {
   margin: 0px;
-  background: #fbfcfe;
+  background: #ffffff;
   color: fade(@text-color, 80%) !important;
   font-family: "Roboto", sans-serif;
   padding-top: 50px;
@@ -100,6 +100,8 @@ h3 {
   margin-left: 260px;
   padding: 60px 30px 50px 30px;
   padding-top: 110px;
+  min-height: 100vh;
+  background-color: #f5f5f5;
 
   .nav-tabs {
     margin: 0 auto;
@@ -162,10 +164,10 @@ h3 {
 
 .ui-chips-token .ui-chips-token-label {
   display: block;
-  background-color: #efefef;
+  background-color: #ffffff;
   margin-right: 7px;
   padding: 0px 16px 0px 6px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 4px;
   margin-bottom: 4px;
   height: 24px;
@@ -199,9 +201,9 @@ h3 {
   top: 60px;
   left: 260px;
   right: 0;
-  background: #e5e9f2;
+  background: #ffffff;
   align-items: center;
-  border-bottom: 1px solid #e6ecf1;
+  border-bottom: 1px solid #ffffff;
   overflow-x: auto;
   overflow-y: hidden;
   padding: 15px 30px;
@@ -229,7 +231,7 @@ h3 {
     .list-group-item {
       background-color: transparent;
       border: 0px;
-      border-bottom: 0px solid #ccc;
+      border-bottom: 0px solid #ffffff;
       -webkit-transition:
         color 300ms,
         background-color 300ms;
@@ -246,7 +248,7 @@ h3 {
       padding: 8px 12px;
       border-width: 1px 1px 1px 1px;
       border-style: solid;
-      border-color: #e5e9f2;
+      border-color: #ffffff;
       white-space: nowrap;
       flex-shrink: 0;
       a {
@@ -314,7 +316,7 @@ h3 {
   left: 0px;
   background: @grey_snello;
   align-items: stretch;
-  border-right: 1px solid #e6ecf1;
+  border-right: 1px solid #ffffff;
   overflow-x: hidden;
   padding-top: 0px;
 
@@ -336,7 +338,7 @@ h3 {
       background-color: transparent;
       border: 0px;
       padding: 0px;
-      border-bottom: 0px solid #ccc;
+      border-bottom: 0px solid #ffffff;
       -webkit-transition:
         color 300ms,
         background-color 300ms;
@@ -351,7 +353,7 @@ h3 {
         background-color 300ms;
       margin-bottom: 2px;
       border-style: solid;
-      border-color: #e5e9f2;
+      border-color: #ffffff;
       text-align: left;
       padding-left: 15px;
       height: auto;
@@ -517,7 +519,7 @@ table {
   thead {
     width: 100%;
     tr {
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #ffffff;
       th {
         color: @violet;
         padding: 12px 6px;
@@ -527,7 +529,7 @@ table {
         width: 100%;
         border: 0px;
         background-color: @white !important;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid #ffffff;
         th {
           padding: 12px 6px !important;
           color: @bluegrey !important;
@@ -560,7 +562,7 @@ table {
       tr {
         th {
           padding: 12px 6px;
-          color: #fff;
+          color: #ffffff;
           border: 0px;
           &.form-control {
             font-size: 13px;
@@ -582,7 +584,7 @@ table {
             right: 20px;
           }
           .input-group-addon {
-            background-color: #fff;
+            background-color: #ffffff;
             border: 0px;
             i {
               font-size: 15px;
@@ -602,7 +604,7 @@ table {
   }
   tbody {
     tr {
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #ffffff;
       -webkit-transition:
         color 300ms,
         background-color 300ms;
@@ -616,7 +618,7 @@ table {
         color 300ms,
         background-color 300ms;
       &:hover {
-        background-color: #efefef;
+        background-color: #ffffff;
       }
       td {
         padding: 7px 6px;
@@ -703,7 +705,7 @@ table {
   margin: 0px;
   border-width: 1px;
   border-style: solid;
-  border-color: #e6ecf1;
+  border-color: #ffffff;
   border-radius: 4px;
   padding: 24px 16px;
   margin-bottom: 20px;
@@ -738,7 +740,7 @@ table {
   margin: 0px;
   border-width: 1px;
   border-style: solid;
-  border-color: #e6ecf1;
+  border-color: #ffffff;
   border-radius: 4px;
   padding: 24px 0px;
   margin-bottom: 20px;
@@ -754,7 +756,7 @@ table {
 }
 
 .btn-add {
-  color: #fff;
+  color: #ffffff;
   border-color: @red_snello;
   background-color: @red_snello;
   box-shadow:
@@ -814,11 +816,11 @@ table {
 
 .ui-multiselect {
   cursor: pointer;
-  color: #58666e;
-  border: 1px solid #cfdadd;
+  color: #000000;
+  border: 1px solid #ffffff;
   width: 100%;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #ffffff;
 
   .ui-multiselect-label-container {
     padding: 6px 12px;
@@ -836,10 +838,10 @@ table {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #555;
-  background-color: #fff;
+  color: #000000;
+  background-color: #ffffff;
   background-image: none;
-  border: 1px solid #cfdadd;
+  border: 1px solid #ffffff;
   border-radius: 4px;
   box-shadow: none !important;
   transition:
@@ -877,12 +879,12 @@ table {
 
 .ui-multiselect label.ui-multiselect-label {
   cursor: pointer;
-  color: #58666e;
-  border: 1px solid #cfdadd;
+  color: #000000;
+  border: 1px solid #ffffff;
   padding: 6px 12px;
   width: 100%;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .btn-success {
@@ -1233,7 +1235,7 @@ table {
   margin-top: 20px;
   width: 100%;
   text-align: center;
-  border-top: 1px dotted #ccc;
+  border-top: 1px dotted #ffffff;
   padding-top: 15px;
 
   &.btn-group {
@@ -1300,7 +1302,7 @@ table {
 
 .card {
   padding: 15px 30px;
-  border: 1px solid #ddd;
+  border: 1px solid #ffffff;
   text-decoration: none !important;
   height: 100px;
   background-color: @white;
@@ -1333,7 +1335,7 @@ table {
 
 .card-home {
   padding: 15px 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #ffffff;
   text-decoration: none !important;
   min-height: 100px;
   height: auto;
@@ -1389,7 +1391,7 @@ table {
 
 .card-home-user {
   padding: 15px 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #ffffff;
   text-decoration: none !important;
   height: 100px;
   background-color: @white;
@@ -1493,7 +1495,7 @@ button {
     .ui-button-text {
       padding: 10px;
       background-color: fade(@grey_snello, 80%);
-      color: #fff;
+      color: #ffffff;
       border-radius: 4px !important;
       display: inline;
 
@@ -1502,7 +1504,7 @@ button {
           outline-offset 0.15s ease-in-out,
           background-color 0.15s linear;
         font-size: 1.25rem;
-        background-color: #c8dadf;
+        background-color: #ffffff;
         position: absolute;
         opacity: 0;
         min-height: 100%;
@@ -1544,9 +1546,9 @@ button {
     top: 0px;
     left: 70px;
     width: calc(100% - 70px);
-    background: #e5e9f2;
+    background: #ffffff;
     align-items: stretch;
-    border-right: 1px solid #e6ecf1;
+    border-right: 1px solid #ffffff;
     overflow-x: hidden;
     padding: 30px 30px;
 
@@ -1563,7 +1565,7 @@ button {
       .list-group-item {
         background-color: transparent;
         border: 0px;
-        border-bottom: 0px solid #ccc;
+        border-bottom: 0px solid #ffffff;
         -webkit-transition:
           color 300ms,
           background-color 300ms;
@@ -1580,7 +1582,7 @@ button {
         padding: 12px;
         border-width: 1px 1px 1px 1px;
         border-style: solid;
-        border-color: #e5e9f2;
+        border-color: #ffffff;
         a {
           text-decoration: none;
           font-weight: 700;
@@ -1647,7 +1649,7 @@ button {
   }
   .card {
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #ffffff;
     text-decoration: none !important;
     height: 150px;
     background-color: #ffffff;
@@ -1670,7 +1672,7 @@ button {
   margin: 0px;
   border-width: 1px;
   border-style: solid;
-  border-color: #e6ecf1;
+  border-color: #ffffff;
   border-radius: 4px;
   padding: 30px 30px;
   margin-bottom: 30px;
@@ -1682,7 +1684,7 @@ button {
   margin: 0px;
   border-width: 1px;
   border-style: solid;
-  border-color: #e6ecf1;
+  border-color: #ffffff;
   border-radius: 4px;
   padding: 30px;
   margin-bottom: 30px;
@@ -1719,7 +1721,7 @@ button {
       box-shadow:
         0 15px 35px rgba(50, 50, 93, 0.1),
         0 5px 15px rgba(0, 0, 0, 0.07) !important;
-      background-color: #f4f5f7 !important;
+      background-color: #ffffff !important;
       border-radius: 0.25rem;
       margin-top: 6px;
 
@@ -1731,14 +1733,14 @@ button {
         padding: 8px 12px;
         transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         color: @grey_snello;
-        border: 0px solid #cad1d7;
+        border: 0px solid #ffffff;
         border-radius: 0.25rem;
-        background-color: #fff;
+        background-color: #ffffff;
         background-clip: padding-box;
         box-shadow: none;
       }
       .btn {
-        color: #fff;
+        color: #ffffff;
         border-color: @red_snello;
         background-color: @red_snello;
         box-shadow:
@@ -1769,7 +1771,7 @@ button {
 
 .ui-confirmdialog {
   width: 30em;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 3px;
   top: 50% !important;
   left: 50% !important;
