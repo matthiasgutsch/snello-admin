@@ -26,7 +26,7 @@
                     </button>
 
                     <button type="button" class="snello-chat-minimize" (click)="minimize()" title="Minimize chat">
-                        <lucide-icon name="minus"></lucide-icon>
+                        
                     </button>
                 </div>
             </header>
@@ -54,7 +54,7 @@
                                     @for (action of message.actions; track (action.label || action.path || action.entity || '') + '-' + (action.id || '')) {
                                         <button type="button" class="snello-action-card" (click)="openAction(action)">
                                             <span class="snello-action-card-icon">
-                                                <lucide-icon name="external-link"></lucide-icon>
+                                                
                                             </span>
                                             <span class="snello-action-card-body">
                                                 <span class="snello-action-card-entity">{{formatActionLabel(action)}}</span>
@@ -63,7 +63,7 @@
                                                 }
                                             </span>
                                             <span class="snello-action-card-arrow">
-                                                <lucide-icon name="chevron-right"></lucide-icon>
+                                                
                                             </span>
                                         </button>
                                     }

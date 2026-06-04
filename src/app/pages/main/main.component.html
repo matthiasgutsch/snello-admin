@@ -3,10 +3,10 @@
 <div class="sidenav">
     <ul>
         <li [class]="selected == 'adminpage' ? 'active' : '' ">
-            <a [routerLink]="'adminpage'" (click)="select('adminpage')"><lucide-icon name="home"></lucide-icon></a>
+            <a [routerLink]="'adminpage'" (click)="select('adminpage')"></a>
         </li>
         <li [class]="selected == 'home' ? 'active' : '' ">
-            <a [routerLink]="'home'" (click)="select('home')"><lucide-icon name="table"></lucide-icon></a>
+            <a [routerLink]="'home'" (click)="select('home')"></a>
         </li>
     </ul>
 </div>

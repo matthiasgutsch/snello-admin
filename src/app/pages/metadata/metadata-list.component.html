@@ -12,19 +12,19 @@
   <p>
 
   </p>
-  <button type="button" class="btn btn-add" (click)="new()"><lucide-icon name="plus-circle"></lucide-icon> Add
+  <button type="button" class="btn btn-add" (click)="new()"> Add
   </button>
 
   <button type="button" class="btn btn-search" (click)="openExportPage()">
-    <lucide-icon name="download"></lucide-icon> Export
+     Export
   </button>
 
   <button type="button" class="btn btn-reset" (click)="openImportPage()">
-    <lucide-icon name="upload"></lucide-icon> Import
+     Import
   </button>
 
   <button type="button" class="btn btn-default" (click)="openWizardPage()">
-    <lucide-icon name="wand2"></lucide-icon> Wizard
+     Wizard
   </button>
 </div>
 
@@ -98,11 +98,11 @@
                     <td class="RowIndex">{{ rowIndex + 1 }}</td>
                     <td class="ui-resizable-column">
                       <button type="button" class="btn btn-value" (click)="view(rowData)" title="View">
-                        <lucide-icon name="table"></lucide-icon>  {{rowData.table_name}}
+                          {{rowData.table_name}}
                       </button>
                       @if (!rowData.created || rowData.already_exist) {
                         <button type="button" class="btn btn-info btn-square" (click)="openFieldDefinitionListPage(rowData)" title="Field Definitions List">
-                          <lucide-icon name="list"></lucide-icon>
+                          
                         </button>
                       }
                     </td>
@@ -116,34 +116,34 @@
                       <div class="btn-group">
                         @if (!rowData.created || rowData.already_exist) {
                           <button type="button" class="btn btn-default btn-square" (click)="edit(rowData)" title="Modify">
-                            <lucide-icon name="edit"></lucide-icon>
+                            
                           </button>
                         }
                         @if (!rowData.created || rowData.already_exist) {
                           <button type="button" class="btn btn-primary btn-square" (click)="openWizardEditPage(rowData)" title="Modify with Wizard">
-                            <lucide-icon name="wand2"></lucide-icon>
+                            
                           </button>
                         }
                         @if (!rowData.created || rowData.already_exist) {
                           <button type="button" class="btn btn-success btn-square" (click)="addField(rowData)" title="Add Field Definition">
-                            <lucide-icon name="plus"></lucide-icon>
+                            
                           </button>
                         }
                         @if (!rowData.created && !rowData.already_exist) {
                           <button type="button" class="btn btn-primary btn-square" (click)="confirmCreateTable(rowData)" title="Create Table on Database">
-                            <lucide-icon name="table"></lucide-icon>
+                            
                           </button>
                         }
 
                         @if (rowData.created && !rowData.already_exist) {
                           <button type="button" class="btn btn-warning btn-square" (click)="confirmTruncateTable(rowData)" title="Truncate Table Data">
-                            <lucide-icon name="eraser"></lucide-icon>
+                            
                           </button>
                         }
 
                         @if (rowData.created && !rowData.already_exist) {
                           <button type="button" class="btn btn-danger btn-square" (click)="confirmDeleteTable(rowData)" title="Delete Table on Database">
-                            <lucide-icon name="alert-triangle"></lucide-icon>
+                            
                           </button>
                         }
                       </div>

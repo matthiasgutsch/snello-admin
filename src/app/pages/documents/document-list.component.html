@@ -10,7 +10,7 @@
   <p>
 
   </p>
-  <button type="button" class="btn btn-add pull-right" (click)="new()"><lucide-icon name="plus-circle"></lucide-icon>
+  <button type="button" class="btn btn-add pull-right" (click)="new()">
   Add
 </button>
 </div>
@@ -142,7 +142,7 @@
                       <div>{{ rowData.formats || '-' }}</div>
                       <div>
                         <button type="button" (click)="download(rowData.uuid)" class="btn btn-success btn-sm" title="Download">
-                          <lucide-icon name="download"></lucide-icon>
+                          
                         </button>
                         <a
                           role="button"
@@ -150,17 +150,17 @@
                           [copy-clipboard]="downloadPath(rowData.uuid)"
                           (copied)="notify($event)"
                           title="Copy path">
-                          <lucide-icon name="clipboard"></lucide-icon>
+                          
                         </a>
                       </div>
                     </td>
                     <td>
                         <button type="button" (click)="edit(rowData)" class="btn btn-success btn-sm">
-                          <lucide-icon name="edit"></lucide-icon> Modify
+                           Modify
                         </button>
 
                         <button type="button" (click)="confirmDelete(rowData)" class="btn btn-warning btn-sm">
-                          <lucide-icon name="trash-2"></lucide-icon> Delete
+                           Delete
                         </button>
 
                     </td>

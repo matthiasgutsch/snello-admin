@@ -103,7 +103,7 @@
                       <div>{{ rowData.formats || '-' }}</div>
                       <div>
                         <button type="button" (click)="download(rowData.uuid)" class="btn btn-success btn-sm" title="Download">
-                          <lucide-icon name="download"></lucide-icon>
+                          
                         </button>
                         <a
                           role="button"
@@ -111,7 +111,7 @@
                           [copy-clipboard]="downloadPath(rowData.uuid)"
                           (copied)="notify($event)"
                           title="Copy path">
-                          <lucide-icon name="clipboard"></lucide-icon>
+                          
                         </a>
                       </div>
                     </td>

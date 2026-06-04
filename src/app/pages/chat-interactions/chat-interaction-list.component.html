@@ -85,7 +85,7 @@
                         aria-label="Copy conversation UUID"
                         [copy-clipboard]="rowData.conversation_uuid"
                         (copied)="onValueCopied('Conversation UUID')">
-                        <lucide-icon name="clipboard"></lucide-icon>
+                        
                       </button>
                     </td>
                     <td class="ui-resizable-column">
@@ -99,7 +99,7 @@
                         aria-label="Copy user ID"
                         [copy-clipboard]="rowData.user_id"
                         (copied)="onValueCopied('User ID')">
-                        <lucide-icon name="clipboard"></lucide-icon>
+                        
                       </button>
                     </td>
                     <td class="ui-resizable-column">{{ formatCreationDate(rowData.creation_date) }}</td>
