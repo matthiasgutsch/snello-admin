@@ -66,15 +66,15 @@
                   <p-select [options]="iconItems" [(ngModel)]="element.icon" filter="true" name="icon"
                     required>
                     <ng-template let-item pTemplate="selectedItem">
-                      <div style="display:flex; align-items:center; gap:.5rem; min-height:1.75rem; line-height:1;">
-                        <i class="{{item.value}}" style="width:1.1rem; text-align:center; font-size:1rem;"></i>
-                        <span style="font-size:14px; line-height:1.2;">{{ item.label }}</span>
+                      <div>
+                        <i class="{{item.value}}"></i>
+                        <span>{{ item.label }}</span>
                       </div>
                     </ng-template>
                     <ng-template let-icon pTemplate="item">
-                      <div style="display:flex; align-items:center; gap:.5rem; min-height:1.75rem; line-height:1;">
-                        <i class="{{icon.value}}" style="width:1.1rem; text-align:center; font-size:1rem;"></i>
-                        <span style="font-size:14px; line-height:1.2;">{{ icon.label }}</span>
+                      <div>
+                        <i class="{{icon.value}}"></i>
+                        <span>{{ icon.label }}</span>
                       </div>
                     </ng-template>
                   </p-select>

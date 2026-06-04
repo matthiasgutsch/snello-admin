@@ -6,8 +6,8 @@
 
 <div class="sidebar-subpage">
   <h3>Metadata Import</h3>
-  <button type="button" class="btn btn-reset btn-block" style="display: block; width: 100%;" (click)="goToMetadataList()">
-    <i class="fa fa-arrow-left"></i> Back to List
+  <button type="button" class="btn btn-reset" (click)="goToMetadataList()">
+    <lucide-icon name="arrow-left"></lucide-icon> Back to List
   </button>
 </div>
 
@@ -16,7 +16,7 @@
     <div class="row">
       <div class="col-md-12 col-sm-12">
         <div class="content list">
-          <div class="row" style="margin-bottom: 12px;">
+          <div class="row">
             <div class="col-sm-12">
               <input type="file" accept="application/json,.json" class="form-control" (change)="onImportFileSelected($event)" />
             </div>
@@ -45,7 +45,7 @@
               </p-table>
             </div>
 
-            <div style="margin-top: 16px; text-align: right;">
+            <div>
               <button
                 type="button"
                 class="btn btn-search"

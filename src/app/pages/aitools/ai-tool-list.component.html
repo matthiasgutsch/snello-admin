@@ -11,7 +11,7 @@
   <p>
 
   </p>
-  <button type="button" class="btn btn-add pull-right btn-block" (click)="new()"><i class="fa fa-plus-circle"></i> Add
+  <button type="button" class="btn btn-add pull-right" (click)="new()"><lucide-icon name="plus-circle"></lucide-icon> Add
   </button>
 </div>
 
@@ -79,7 +79,7 @@
                     <td class="ui-resizable-column">{{rowData.active}}</td>
                     <td>
                       <button type="button" class="btn btn-default btn-square" (click)="edit(rowData)" title="Modify">
-                        <i aria-hidden="true" class="fa fa-pencil"></i>
+                        <lucide-icon name="edit"></lucide-icon>
                       </button>
                     </td>
                   </tr>

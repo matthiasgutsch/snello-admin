@@ -68,13 +68,13 @@
                 <div class="form-group clearfix row">
                   <label class="label-text col-sm-3">Body</label>
                   <div class="col-sm-9">
-                    <div style="display:flex;justify-content:flex-end;margin-bottom:8px;">
+                    <div>
                       <button type="button" class="btn btn-default btn-sm" (click)="showLegendDialog = true" title="Available objects and functions">
                         <i class="fa fa-info-circle" aria-hidden="true"></i>
                         Info
                       </button>
                     </div>
-                    <textarea [(ngModel)]="element.body" name="body" pTextarea rows="8" style="width: 100%" placeholder="Body"></textarea>
+                    <textarea [(ngModel)]="element.body" name="body" pTextarea rows="8" placeholder="Body"></textarea>
                   </div>
                 </div>
 
@@ -106,7 +106,7 @@
                       [style]="{width: '70vw', maxWidth: '980px'}"
                       header="Available objects map and services legend"
                       (onHide)="showLegendDialog = false">
-                      <div style="line-height:1.6;">
+                      <div>
                         <div><strong>available objects map:</strong></div>
                         <ul>
                           <li>"action", action</li>

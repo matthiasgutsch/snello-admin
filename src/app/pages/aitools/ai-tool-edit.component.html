@@ -66,7 +66,7 @@
                 <label class="label-text col-sm-3">Schema Parameters</label>
                 <div class="col-sm-9">
                   @for (parameter of parameterDrafts; track $index; let i = $index) {
-                    <div class="row" style="margin-bottom: 8px;">
+                    <div class="row">
                       <div class="col-sm-3">
                         <input [(ngModel)]="parameter.name" [name]="'param_name_' + i"
                           pInputText placeholder="Nome parametro">
@@ -82,7 +82,7 @@
                         <input [(ngModel)]="parameter.description" [name]="'param_desc_' + i"
                           pInputText placeholder="Descrizione parametro">
                       </div>
-                      <div class="col-sm-2" style="padding-top: 6px;">
+                      <div class="col-sm-2">
                         <label>
                           <input type="checkbox" [(ngModel)]="parameter.required" [name]="'param_required_' + i">
                           Required

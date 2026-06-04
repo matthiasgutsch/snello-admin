@@ -6,8 +6,8 @@
 
 <div class="sidebar-subpage">
   <h3>Metadata Export</h3>
-  <button type="button" class="btn btn-reset btn-block" style="display: block; width: 100%;" (click)="goToMetadataList()">
-    <i class="fa fa-arrow-left"></i> Back to List
+  <button type="button" class="btn btn-reset" (click)="goToMetadataList()">
+    <lucide-icon name="arrow-left"></lucide-icon> Back to List
   </button>
 </div>
 
@@ -56,7 +56,7 @@
             </p-table>
           </div>
 
-          <div style="margin-top: 16px;">
+          <div>
             <p><strong>Selected metadatas:</strong> {{ selectedExportUuids.size }}</p>
 
             @if (selectedMetadatas.length > 0) {

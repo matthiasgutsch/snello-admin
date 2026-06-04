@@ -82,7 +82,7 @@
                     "
                     class="btn btn-upload btn-md"
                     >
-                    <i aria-hidden="true" class="fa fa-upload"></i> Upload
+                    <lucide-icon name="upload"></lucide-icon> Upload
                   </button>
 
                   <button
@@ -100,7 +100,7 @@
                     <p-panel header="File loaded">
                       @if (!okFileList || okFileList.length === 0) {
                         <li
-                          style="list-style-type: none"
+                         
                           >
                           None
                         </li>
@@ -116,7 +116,7 @@
                     <p-panel header="Files with errors">
                       @if (!errorFileList || errorFileList.length === 0) {
                         <li
-                          style="list-style-type: none"
+                         
                           >
                           None
                         </li>
@@ -145,7 +145,7 @@
                       (click)="resetAll()"
                       class="btn btn-warning btn-sm"
                       >
-                      <i aria-hidden="true" class="fa fa-upload"></i> Load
+                      <lucide-icon name="upload"></lucide-icon> Load
                       Another file
                     </button>
                   </div>
@@ -165,7 +165,7 @@
               <div
                 class="gallery-image-container"
                 >
-                <div style="width: 200px; height: 200px">
+                <div>
                   <img [src]="downloadPath(document.uuid)" height="90%" [alt]="document.name"/>
                   <div class="gallery-image-buttons-container">
                     <button (click)="navigateToDocumentEdit(document.uuid)">

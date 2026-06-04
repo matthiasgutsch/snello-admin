@@ -87,7 +87,7 @@
                           (loadedmetadata)="onVideoThumbLoadedMetadata($event.target)"
                           (seeked)="onVideoThumbSeeked($event.target)"
                           (error)="onVideoThumbError(rowData)"
-                          style="width:96px;height:56px;object-fit:cover;border-radius:6px;border:1px solid #ddd;background:#000;cursor:pointer;"
+                         
                           tabindex="0"
                           aria-label="Open video preview">
                         </video>
@@ -97,7 +97,7 @@
                     </td>
                     <td>
                       <div>{{ rowData.original_name }}</div>
-                      <div class="text-muted" style="font-size:12px;line-height:1.3;">
+                      <div class="text-muted">
                         table_name:
                         @if (rowData.table_name) {
                           <a href="#" (click)="$event.preventDefault(); setSearchTableNameFromRow(rowData.table_name, datatable)">{{ rowData.table_name }}</a>
@@ -105,7 +105,7 @@
                           -
                         }
                       </div>
-                      <div class="text-muted" style="font-size:12px;line-height:1.3;">
+                      <div class="text-muted">
                         table_key:
                         @if (rowData.table_key) {
                           <a href="#" (click)="$event.preventDefault(); setSearchTableKeyFromRow(rowData.table_key, datatable)">{{ rowData.table_key }}</a>
@@ -113,19 +113,19 @@
                           -
                         }
                       </div>
-                      <div class="text-muted" style="font-size:12px;line-height:1.3;">
+                      <div class="text-muted">
                         creation_date: {{ formatCreationDate(rowData.creation_date) }}
                       </div>
                     </td>
                     <td>
                       <div>{{ rowData.mimetype }}</div>
-                      <div class="text-muted" style="font-size:12px;line-height:1.3;">size: {{ rowData.size ?? '-' }}</div>
+                      <div class="text-muted">size: {{ rowData.size ?? '-' }}</div>
                     </td>
                     <td>
                       <div>{{ rowData.formats || '-' }}</div>
-                      <div style="display:flex;align-items:center;gap:8px;margin-top:4px;">
+                      <div>
                         <button type="button" (click)="download(rowData.uuid)" class="btn btn-success btn-sm" title="Download">
-                          <i aria-hidden="true" class="fa fa-download"></i>
+                          <lucide-icon name="download"></lucide-icon>
                         </button>
                         <a
                           role="button"
@@ -133,7 +133,7 @@
                           [copy-clipboard]="downloadPath(rowData.uuid)"
                           (copied)="notify($event)"
                           title="Copy path">
-                          <i aria-hidden="true" class="fa fa-clipboard"></i>
+                          <lucide-icon name="clipboard"></lucide-icon>
                         </a>
                       </div>
                     </td>
@@ -161,13 +161,13 @@
   [style]="{width: '90vw', height: '90vh'}"
   (onHide)="closeVideoPreview()">
   @if (selectedVideoPreview) {
-    <div style="display:flex;justify-content:flex-end;align-items:center;margin-bottom:10px;">
-      <label style="display:flex;align-items:center;gap:6px;font-weight:600;margin:0;">
+    <div>
+      <label>
         <input type="checkbox" [(ngModel)]="videoLoopEnabled" [ngModelOptions]="{ standalone: true }" />
         Loop
       </label>
     </div>
-    <video style="width:100%;height:100%;object-fit:contain;" controls [loop]="videoLoopEnabled" [src]="previewPath(selectedVideoPreview.uuid)">
+    <video controls [loop]="videoLoopEnabled" [src]="previewPath(selectedVideoPreview.uuid)">
       Your browser does not support the video tag.
     </video>
   }

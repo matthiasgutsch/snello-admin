@@ -56,12 +56,12 @@
     <ul>
         <li [class]="selected == 'adminpage' ? 'active' : '' ">
             <a [routerLink]="'/adminpage'" (click)="select('adminpage')">
-                <i class="fa fa-home" aria-hidden="true"></i>
+                <lucide-icon name="home"></lucide-icon>
             </a>
         </li>
         <li [class]="selected == 'home' ? 'active' : '' ">
             <a [routerLink]="'/home'" (click)="select('home')">
-                <i class="fa fa-table" aria-hidden="true"></i>
+                <lucide-icon name="table"></lucide-icon>
             </a>
         </li>
         <li [class]="''">

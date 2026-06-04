@@ -12,19 +12,19 @@
   <p>
 
   </p>
-  <button type="button" class="btn btn-add btn-block" style="display: block; width: 100%; margin-bottom: 8px;" (click)="new()"><i class="fa fa-plus-circle"></i> Add
+  <button type="button" class="btn btn-add" (click)="new()"><lucide-icon name="plus-circle"></lucide-icon> Add
   </button>
 
-  <button type="button" class="btn btn-search btn-block" style="display: block; width: 100%; margin-bottom: 8px;" (click)="openExportPage()">
-    <i class="fa fa-download"></i> Export
+  <button type="button" class="btn btn-search" (click)="openExportPage()">
+    <lucide-icon name="download"></lucide-icon> Export
   </button>
 
-  <button type="button" class="btn btn-reset btn-block" style="display: block; width: 100%;" (click)="openImportPage()">
-    <i class="fa fa-upload"></i> Import
+  <button type="button" class="btn btn-reset" (click)="openImportPage()">
+    <lucide-icon name="upload"></lucide-icon> Import
   </button>
 
-  <button type="button" class="btn btn-default btn-block" style="display: block; width: 100%; margin-top: 8px;" (click)="openWizardPage()">
-    <i class="fa fa-magic"></i> Wizard
+  <button type="button" class="btn btn-default" (click)="openWizardPage()">
+    <lucide-icon name="wand2"></lucide-icon> Wizard
   </button>
 </div>
 
@@ -44,9 +44,9 @@
               <div class="col-sm-12">
 
                 <div class="filter-wrapper" (keydown.enter)="onSearchEnter($event, datatable)">
-                  <div class="fw-search-fields" style="display:flex; align-items:center; gap:8px; flex-wrap:nowrap;">
+                  <div class="fw-search-fields">
                     @if (service.search) {
-                      <input id="nome" name="nome" type="text" placeholder="name" style="width:200px; flex-shrink:0;" [(ngModel)]="service.search.table_name_contains" pInputText #nome="ngModel">
+                      <input id="nome" name="nome" type="text" placeholder="name" [(ngModel)]="service.search.table_name_contains" pInputText #nome="ngModel">
                       <p-select
                         name="metadata_group_filter"
                         [options]="metadataGroupItems"
@@ -98,16 +98,16 @@
                     <td class="RowIndex">{{ rowIndex + 1 }}</td>
                     <td class="ui-resizable-column">
                       <button type="button" class="btn btn-value" (click)="view(rowData)" title="View">
-                        <i aria-hidden="true" class="fa fa-table"></i>  {{rowData.table_name}}
+                        <lucide-icon name="table"></lucide-icon>  {{rowData.table_name}}
                       </button>
                       @if (!rowData.created || rowData.already_exist) {
                         <button type="button" class="btn btn-info btn-square" (click)="openFieldDefinitionListPage(rowData)" title="Field Definitions List">
-                          <i aria-hidden="true" class="fa fa-list"></i>
+                          <lucide-icon name="list"></lucide-icon>
                         </button>
                       }
                     </td>
                     <td class="ui-resizable-column">{{rowData.already_exist ? 'already_exist' : 'created'}}</td>
-                    <td class="ui-resizable-column"><small style="color:#9e9e9e">{{rowData.metadata_group}}</small></td>
+                    <td class="ui-resizable-column"><small>{{rowData.metadata_group}}</small></td>
                     <td class="ui-resizable-column">{{rowData.description}}</td>
                     <td class="ui-resizable-column">{{rowData.table_key}}</td>
                     <td class="ui-resizable-column">{{rowData.alias_table}}</td>
@@ -116,34 +116,34 @@
                       <div class="btn-group">
                         @if (!rowData.created || rowData.already_exist) {
                           <button type="button" class="btn btn-default btn-square" (click)="edit(rowData)" title="Modify">
-                            <i aria-hidden="true" class="fa fa-pencil"></i>
+                            <lucide-icon name="edit"></lucide-icon>
                           </button>
                         }
                         @if (!rowData.created || rowData.already_exist) {
                           <button type="button" class="btn btn-primary btn-square" (click)="openWizardEditPage(rowData)" title="Modify with Wizard">
-                            <i aria-hidden="true" class="fa fa-magic"></i>
+                            <lucide-icon name="wand2"></lucide-icon>
                           </button>
                         }
                         @if (!rowData.created || rowData.already_exist) {
                           <button type="button" class="btn btn-success btn-square" (click)="addField(rowData)" title="Add Field Definition">
-                            <i aria-hidden="true" class="fa fa-plus"></i>
+                            <lucide-icon name="plus"></lucide-icon>
                           </button>
                         }
                         @if (!rowData.created && !rowData.already_exist) {
                           <button type="button" class="btn btn-primary btn-square" (click)="confirmCreateTable(rowData)" title="Create Table on Database">
-                            <i aria-hidden="true" class="fa fa-table"></i>
+                            <lucide-icon name="table"></lucide-icon>
                           </button>
                         }
 
                         @if (rowData.created && !rowData.already_exist) {
                           <button type="button" class="btn btn-warning btn-square" (click)="confirmTruncateTable(rowData)" title="Truncate Table Data">
-                            <i aria-hidden="true" class="fa fa-eraser"></i>
+                            <lucide-icon name="eraser"></lucide-icon>
                           </button>
                         }
 
                         @if (rowData.created && !rowData.already_exist) {
                           <button type="button" class="btn btn-danger btn-square" (click)="confirmDeleteTable(rowData)" title="Delete Table on Database">
-                            <i aria-hidden="true" class="fa fa-exclamation-triangle"></i>
+                            <lucide-icon name="alert-triangle"></lucide-icon>
                           </button>
                         }
                       </div>

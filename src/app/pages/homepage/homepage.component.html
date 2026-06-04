@@ -15,7 +15,7 @@
             (click)="selectGroup(group)"
             [style.background]="selectedGroup === group ? '' : 'transparent'"
             [style.color]="selectedGroup === group ? '' : 'inherit'"
-            style="cursor:pointer; padding:4px 8px; border-radius:4px; margin-bottom:2px; font-size:0.85rem;">
+           >
             {{group}}
           </li>
         }
@@ -45,7 +45,7 @@
                         } {{component.table_name}}
                       </h3>
                     @if (component.metadata_group) {
-                      <small style="color: #9e9e9e; font-size: 0.78rem; display: block; margin-top: -6px;">{{component.metadata_group}}</small>
+                      <small>{{component.metadata_group}}</small>
                     }
                     </a>
                   </div>

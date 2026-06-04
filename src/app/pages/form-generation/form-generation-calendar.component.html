@@ -5,18 +5,18 @@
 
 <div class="sidebar-subpage">
   <h3>{{metadataName}} Calendar</h3>
-  <button type="button" (click)="newForm()" class="btn btn-add pull-right btn-block">
-    <i class="fa fa-plus-circle"></i>
+  <button type="button" (click)="newForm()" class="btn btn-add pull-right">
+    <lucide-icon name="plus-circle"></lucide-icon>
     Add
   </button>
   @if (metadata?.calendar_enabled) {
-    <button type="button" (click)="newMassiveForm()" class="btn btn-primary pull-right btn-block" style="margin-right:.5rem">
+    <button type="button" (click)="newMassiveForm()" class="btn btn-primary pull-right">
       <i class="fa fa-layer-group"></i>
       Add massive
     </button>
   }
-  <button type="button" (click)="goToList()" class="btn btn-primary pull-right btn-block" style="margin-right:.5rem">
-    <i class="fa fa-list"></i>
+  <button type="button" (click)="goToList()" class="btn btn-primary pull-right">
+    <lucide-icon name="list"></lucide-icon>
     List
   </button>
 </div>
@@ -25,7 +25,7 @@
   <div class="container-fluid">
 
     @if (fieldDefinitionsSearch && fieldDefinitionsSearch.length > 0) {
-      <div class="row" style="margin-bottom:.5rem; margin-top:.5rem;">
+      <div class="row">
         <div class="col-sm-12">
           <div class="filter-wrapper">
             <div class="fw-search-fields">
@@ -43,7 +43,7 @@
       </div>
     }
     @if (errorMessage) {
-      <div class="row" style="margin-bottom:.5rem;">
+      <div class="row">
         <div class="col-sm-12">
           <div class="alert alert-danger" role="alert">
             {{ errorMessage }}
@@ -65,7 +65,7 @@
   [style]="{width: '60vw'}" [header]="metadataName">
   @if (detailFields && detailFields.length > 0) {
     <dynamic-form [fields]="detailFields" [view]="true"></dynamic-form>
-    <div class="btn-group" style="margin-top:1rem">
+    <div class="btn-group">
       <button type="button" class="btn btn-warning" (click)="editDetail()">Edit</button>
       <button type="button" class="btn btn-secondary" (click)="detailVisible = false">Close</button>
     </div>
